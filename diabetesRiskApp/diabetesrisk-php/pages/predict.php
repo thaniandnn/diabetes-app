@@ -35,7 +35,7 @@ require_once __DIR__ . '/../includes/header.php';
                 </div>
                 <div class="model-option-body">
                     <span class="model-option-name">K-Nearest Neighbor</span>
-                    <span class="model-option-acc">Akurasi: 70.78%</span>
+
                 </div>
                 <span class="model-option-check"><i data-feather="check-circle"></i></span>
             </label>
@@ -47,7 +47,7 @@ require_once __DIR__ . '/../includes/header.php';
                 </div>
                 <div class="model-option-body">
                     <span class="model-option-name">Decision Tree</span>
-                    <span class="model-option-acc">Akurasi: 81.20%</span>
+
                 </div>
                 <span class="model-option-check"><i data-feather="check-circle"></i></span>
             </label>
@@ -59,7 +59,7 @@ require_once __DIR__ . '/../includes/header.php';
                 </div>
                 <div class="model-option-body">
                     <span class="model-option-name">Support Vector Machine</span>
-                    <span class="model-option-acc">Akurasi: 85.50%</span>
+
                 </div>
                 <span class="model-option-check"><i data-feather="check-circle"></i></span>
             </label>

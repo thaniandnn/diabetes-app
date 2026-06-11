@@ -14,7 +14,7 @@ $navItems = [
     'predict'      => ['label' => 'Prediksi Baru',     'icon' => 'activity'],
     'history'      => ['label' => 'Riwayat Prediksi',  'icon' => 'clock'],
     'dataset-info' => ['label' => 'Informasi Dataset', 'icon' => 'database'],
-    'about-model'  => ['label' => 'Tentang Model',     'icon' => 'cpu'],
+
 ];
 ?>
 <!DOCTYPE html>
