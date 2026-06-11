@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="auth-features">
                 <div class="feature-item">
                     <i data-feather="cpu"></i>
-                    <span>Model KNN dengan akurasi 70.78%</span>
+                    <span>Model KNN dengan akurasi 71%</span>
                 </div>
                 <div class="feature-item">
                     <i data-feather="shield"></i>

@@ -294,9 +294,9 @@ require_once __DIR__ . '/../includes/header.php';
 <script>
 // ── Model info map ─────────────────────────────────────────
 const MODEL_INFO = {
-    knn: { name: 'K-Nearest Neighbor',      accuracy: '70.78%' },
-    dt:  { name: 'Decision Tree',            accuracy: '81.20%' },
-    svm: { name: 'Support Vector Machine',   accuracy: '85.50%' },
+    knn: { name: 'K-Nearest Neighbor',      accuracy: '71%' },
+    dt:  { name: 'Decision Tree',            accuracy: '69%' },
+    svm: { name: 'Support Vector Machine',   accuracy: '72%' },
 };
 
 // ── Model selector handler ─────────────────────────────────

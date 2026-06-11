@@ -92,16 +92,41 @@ require_once __DIR__ . '/../includes/header.php';
     </div>
 
     <div class="stat-card stat-card--info">
-        <div class="stat-icon">
+        <div class="stat-icon" id="dash-model-icon">
             <i data-feather="cpu"></i>
         </div>
-        <div class="stat-body">
-            <span class="stat-label">Akurasi Model</span>
-            <span class="stat-value">70.78%</span>
+        <div class="stat-body" style="width: 100%;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                <span class="stat-label">Akurasi Model</span>
+                <select id="dashModelSelect" style="font-size: 0.75rem; padding: 2px; border-radius: 4px; border: 1px solid #cbd5e1; background: white; cursor: pointer; outline: none; color: #64748b;">
+                    <option value="knn">KNN</option>
+                    <option value="dt">DT</option>
+                    <option value="svm">SVM</option>
+                </select>
+            </div>
+            <span class="stat-value" id="dash-model-acc">71%</span>
         </div>
-        <div class="stat-trend">KNN (k=3)</div>
     </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const select = document.getElementById('dashModelSelect');
+    if(select) {
+        select.addEventListener('change', function(e) {
+            const data = {
+                'knn': { acc: '71%', icon: 'cpu' },
+                'dt':  { acc: '69%', icon: 'git-merge' },
+                'svm': { acc: '72%', icon: 'maximize' }
+            };
+            const choice = data[e.target.value];
+            document.getElementById('dash-model-acc').innerText = choice.acc;
+            document.getElementById('dash-model-icon').innerHTML = '<i data-feather="' + choice.icon + '"></i>';
+            if(window.feather) feather.replace();
+        });
+    }
+});
+</script>
 
 <!-- ── Chart + Recent Table ───────────────────────────────── -->
 <div class="dashboard-grid">
