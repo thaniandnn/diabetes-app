@@ -1,0 +1,1 @@
+<?php echo "PHP served at: " . date('H:i:s') . " | File modified: " . date('H:i:s', filemtime('/Applications/XAMPP/xamppfiles/htdocs/diabetes-app/diabetesRiskApp/diabetesrisk-php/pages/predict.php')); ?>
