@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
         select.addEventListener('change', function(e) {
             const data = {
                 'knn': { acc: '71%', icon: 'cpu' },
-                'dt':  { acc: '69%', icon: 'git-merge' },
+                'dt':  { acc: '73%', icon: 'git-merge' },
                 'svm': { acc: '72%', icon: 'maximize' }
             };
             const choice = data[e.target.value];

@@ -5,8 +5,8 @@
         "kernel": "rbf",
         "gamma": "auto"
     },
-    "accuracy": 0.8550,
-    "precision": 0.8100,
-    "recall": 0.7850,
-    "f1_score": 0.7950
+    "accuracy": 0.72,
+    "precision": 0.57,
+    "recall": 0.81,
+    "f1_score": 0.67
 }

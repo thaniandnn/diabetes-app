@@ -104,7 +104,7 @@ def predict():
 
             glucose_bmi     = glucose * bmi
             age_pregnancies = age * pregnancies
-            insulin_glucose = insulin / glucose  # Feature aslinya ternyata pembagian (rasio), bukan perkalian!
+            insulin_glucose = insulin / glucose
 
             X = np.append(X, [[glucose_bmi, age_pregnancies, insulin_glucose]], axis=1)
 
